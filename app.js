@@ -6,13 +6,9 @@ let result = document.getElementById("result");
 
 btn.addEventListener("click", () => {
   let inputNum = inputBox.value;
-  if (inputNum % 1 != 0 || inputNum == "") {
-    alert("please enter a whole number");
-  } else {
-    result.innerText = `The Factorial of ${inputNum} is ${getFactorial(
-      inputNum
-    )}`;
-  }
+  result.innerText = `The Factorial of ${inputNum} is ${getFactorial(
+    inputNum
+  )}`;
 });
 
 function getFactorial(x) {
